@@ -10,7 +10,7 @@ public class FirstPersonController_Sam : MonoBehaviour
 {
     public bool canMove { get; private set; } = true;
     private bool isRunning => canRun && Input.GetKey(runKey);
-    private bool shouldJump => Input.GetKeyDown(jumpKey) && characterController.isGrounded;
+    private bool shouldJump => Input.GetKey(jumpKey) && characterController.isGrounded;
     private bool shouldCrouch => Input.GetKeyDown(crouchKey) && !duringCrouchAnimation && characterController.isGrounded;
 
     #region Settings
@@ -208,6 +208,7 @@ public class FirstPersonController_Sam : MonoBehaviour
             timeElapsed += Time.deltaTime;
             yield return null;
         }
+
         characterController.height = targetHeight;
         characterController.center = targetCenter;
 
