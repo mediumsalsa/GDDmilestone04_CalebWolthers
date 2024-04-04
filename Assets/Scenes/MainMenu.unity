@@ -510,10 +510,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 489701129131449448, guid: 32d592d6c97ad6d46b305107e62d4aee,
+        type: 3}
+      propertyPath: m_Height
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3062724186553635753, guid: 32d592d6c97ad6d46b305107e62d4aee,
         type: 3}
       propertyPath: runSpeed
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062724186553635753, guid: 32d592d6c97ad6d46b305107e62d4aee,
+        type: 3}
+      propertyPath: jumpForce
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3062724186553635753, guid: 32d592d6c97ad6d46b305107e62d4aee,
         type: 3}
